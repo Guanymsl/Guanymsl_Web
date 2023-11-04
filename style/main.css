@@ -1,31 +1,26 @@
+/*Universal*/
 body{
     background-color: rgb(33, 33, 33);
 }
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Agbalumo, cursive;
 }
+
+/*Header*/
 ul.header{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgb(93, 93, 93);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-h1.title{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
 }
 
 ul.header li{
     float: left;
 }
 
-li a.navbar{
+ul.header li a{
     font-size: larger;
     font-weight: bold;
     color: white;
@@ -35,6 +30,34 @@ li a.navbar{
     text-decoration: none;
 }
 
-li a.navbar:hover{
+ul.header li a:hover:not(.active){
     background-color: rgb(63, 63, 63);
+}
+
+ul.header li a.active{
+    background-color: rgb(152, 152, 152);
+}
+
+/*Home*/
+div.home{
+    border-bottom: 5px solid rgb(159, 159, 159);
+    position: absolute;
+    left: 0;
+    width: 70%;
+    margin: 30px;
+}
+
+div.home p{
+    padding: 50px 50px;
+    color: white;
+    font-size: 3em;
+    text-align: left;
+}
+
+.home_icon{
+    position: absolute;
+    right: 0;
+    width: 18%;
+    margin: 30px 60px;
+    float: right;
 }
