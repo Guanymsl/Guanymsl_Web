@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+        <link rel="icon" type="images/x-icon" href="image/icon1.png">
 
     </head>
 
@@ -18,14 +19,19 @@
         <ul class="header">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#intro">Intro</a></li>
-            <li style="float: right"><a href="#about">About</a></li>
+            <li style="float: right">
+                <a href="#about" class="dropdown">About</a>
+                <div class="dropdown_content">
+                    <a href="#info">Info</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </li>
         </ul>
 
         <!--Home-->
 
         <div class="home">
             <p>This is me.</p>
-            
         </div>
         <div><img src="image/icon1.png" class="home_icon"></div>
 

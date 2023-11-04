@@ -8,7 +8,7 @@ body{
 }
 
 /*Header*/
-ul.header{
+.header{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,11 +16,11 @@ ul.header{
     background-color: rgb(93, 93, 93);
 }
 
-ul.header li{
+.header li{
     float: left;
 }
 
-ul.header li a{
+.header li a{
     font-size: larger;
     font-weight: bold;
     color: white;
@@ -30,16 +30,40 @@ ul.header li a{
     text-decoration: none;
 }
 
-ul.header li a:hover:not(.active){
+.header li a:hover:not(.active){
     background-color: rgb(63, 63, 63);
 }
 
-ul.header li a.active{
+.header li a.active{
     background-color: rgb(152, 152, 152);
 }
 
+.dropdown_content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(80, 80, 80);
+    z-index: 1;
+}
+  
+.dropdown_content a{
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown_content a:hover{
+    background-color: rgb(52, 52, 52);
+}
+  
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
 /*Home*/
-div.home{
+.home{
+    z-index: -1;
     border-bottom: 5px solid rgb(159, 159, 159);
     position: absolute;
     left: 0;
@@ -47,7 +71,7 @@ div.home{
     margin: 30px;
 }
 
-div.home p{
+.home p{
     padding: 50px 50px;
     color: white;
     font-size: 3em;
@@ -55,6 +79,7 @@ div.home p{
 }
 
 .home_icon{
+    z-index: -1;
     position: absolute;
     right: 0;
     width: 18%;
