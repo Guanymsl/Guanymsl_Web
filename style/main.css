@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(33, 33, 33);
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul.header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(93, 93, 93);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+h1.title{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+ul.header li{
+    float: left;
+}
+
+li a.navbar{
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+li a.navbar:hover{
+    background-color: rgb(63, 63, 63);
+}
