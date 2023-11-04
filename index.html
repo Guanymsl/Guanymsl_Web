@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
 
-        <title>Guanymsl_Web</title>
+        <title>Guanymsl Web</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
         <link rel="icon" type="images/x-icon" href="image/icon1.png">
 
     </head>
 
     <body>
 
-        <!--header-->
+        <!--Header-->
+        <header>
+            <div class="header">
+                <p><b>Guanymsl</b></p>
+            </div>
+        </header>
 
-        <ul class="header">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#intro">Intro</a></li>
-            <li style="float: right">
-                <a href="#about" class="dropdown">About</a>
-                <div class="dropdown_content">
-                    <a href="#info">Info</a>
-                    <a href="#contact">Contact</a>
+        <!--Nav-->
+        <nav>
+            <div class="nav">
+                <a href="#home">Home</a>
+                <a href="#intro">Intro</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">About</button>
+                    <div class="dropdown_content" id="myDropdown">
+                        <a href="#info">Info</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </nav>
 
         <!--Home-->
-
-        <div class="home">
+        <div class="home" id="home">
             <p>This is me.</p>
         </div>
         <div><img src="image/icon1.png" class="home_icon"></div>
+    
+        <!--intro-->
+        <!--
+        <div style="color:white" id="intro">
+            <p>I'm Intro!</p>
+        </div>
+        -->
+
+        <!--Script-->
+        <script src="script/main.js"></script>
 
     </body>
 </html>
